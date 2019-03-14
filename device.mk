@@ -85,9 +85,8 @@ PRODUCT_COPY_FILES += \
     device/huawei/angler/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
     device/huawei/angler/synaptics_dsx.idc:system/usr/idc/synaptics_dsx.idc
 
-# for launcher layout
-#PRODUCT_PACKAGES += \
-#    AnglerLayout
+PRODUCT_PACKAGES_DEBUG += \
+    dhdutil
 
 # Fingerprint Sensor
 PRODUCT_PACKAGES += \
@@ -536,8 +535,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
 
 # Inherit custom memory configurations
-$(call inherit-product, vendor/statix/config/dalvik/phone-xxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product, vendor/statix/config/dalvik/phone-xxhdpi-3072-hwui-memory.mk)
+#$(call inherit-product, vendor/statix/config/dalvik/phone-xxhdpi-3072-dalvik-heap.mk)
+#$(call inherit-product, vendor/statix/config/dalvik/phone-xxhdpi-3072-hwui-memory.mk)
 
 
 # drmservice prop
