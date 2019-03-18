@@ -430,7 +430,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-   ro.frp.pst=/dev/block/platform/soc.0/f9824900.sdhci/by-name/frp
+   ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Request modem to send PLMN name always irrespective
 # of display condition in EFSPN.
