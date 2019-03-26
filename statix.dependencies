@@ -5,7 +5,7 @@
    "branch": "q-preview-1"
  },
  {
-   "repository": "android_vendor_huawei",
+   "repository": "stx-staging/android_vendor_huawei",
    "target_path": "vendor/huawei",
    "branch": "q-preview-1"
  }
