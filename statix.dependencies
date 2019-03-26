@@ -2,11 +2,11 @@
  {
    "repository": "stx-staging/android_kernel_huawei_angler",
    "target_path": "kernel/huawei/angler",
-   "revision": "q-preview-1"
+   "branch": "q-preview-1"
  },
  {
    "repository": "android_vendor_huawei",
    "target_path": "vendor/huawei",
-   "revision": "q-preview-1"
+   "branch": "q-preview-1"
  }
 ]
