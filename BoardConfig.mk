@@ -44,9 +44,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=angler androidboot.console=ttyHSL0 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-3 no_console_suspend
-BOARD_KERNEL_CMDLINE += loop.max_part=7 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += loop.max_part=7 androidboot.selinux=permissive androidboot.boot_devices=soc.0/f9824900.sdhci
 # system-as-root
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+#BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init root=/dev/dm-0
 BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/mmcblk0p43\"
 
